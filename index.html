@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S R Ramkishore — Computer Science Engineer | Portfolio</title>
+  <meta name="description" content="Portfolio of S R Ramkishore — B.Tech Computer Science student working in cybersecurity, cryptography and applied AI. DRDO and ICT Academy intern." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER + NAV (sticky) ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="bar">
+      <a class="logo" href="#home">
+        <span class="logo-mark" aria-hidden="true">SR</span>
+        <span class="logo-text">Ramkishore</span>
+      </a>
+
+      <nav class="nav" aria-label="Main">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">
+          <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#internships">Internships</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-btn" id="themeToggle" aria-pressed="false">
+        <span class="theme-dot" aria-hidden="true"></span>
+        <span class="theme-label" id="themeLabel">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Available for 2027 roles &mdash; Kerala, India</p>
+          <h1 class="hero-name">
+            <span class="line"><span>S R</span></span>
+            <span class="line"><span>Ramkishore</span></span>
+          </h1>
+          <p class="hero-tag">
+            Built slow and built right: chaotic-map image encryption, hardened
+            code, and AI that stays where you put it.
+          </p>
+          <ul class="hero-actions">
+            <li><a class="btn btn-solid" href="#projects">See the work</a></li>
+            <li><a class="btn btn-line" href="RESUME_S_R_RAMKISHORE.pdf" download>Download resume</a></li>
+          </ul>
+          <ul class="hero-links">
+            <li><a href="https://github.com/ramkishore2110" target="_blank" rel="noopener">GitHub &#8599;</a></li>
+            <li><a href="https://www.linkedin.com/in/srramkishore" target="_blank" rel="noopener">LinkedIn &#8599;</a></li>
+          </ul>
+        </div>
+
+        <figure class="hero-photo">
+          <img src="images/ramkishore.png" alt="Portrait of S R Ramkishore" width="420" height="420" />
+          <figcaption>
+            <span class="mono">Currently</span> B.Tech CSE at MBCET &mdash; cybersecurity, cryptography, applied AI
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ TICKER (decorative running band) ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track" id="tickerTrack"></div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <p class="section-tag">About</p>
+      <div class="about-grid">
+        <article class="prose">
+          <h2>Security first, <em>then</em> everything else.</h2>
+          <p>
+            I&rsquo;m a Computer Science undergraduate at Mar Baselios College of Engineering
+            and Technology, Trivandrum. Most of what I enjoy sits at the seam between
+            <strong>cryptography</strong> and <strong>applied AI</strong> — how you scramble an
+            image so convincingly that a generative model has nothing left to morph, and how
+            you make a language model useful without letting it wander.
+          </p>
+          <p>
+            At <strong>ADE, DRDO</strong> I spent a winter reading other people&rsquo;s aerospace
+            code for a living — secure code characterization against ADA compliance rules. Before
+            that, <strong>ICT Academy of Kerala</strong> put me on network monitoring and
+            vulnerability analysis with Kali, Wireshark and Burp. In between, IBM SkillsBuild
+            trained me to build agentic AI workflows in Python.
+          </p>
+          <p>
+            Outside coursework I coordinate the NSS RUDHIRASENA unit&rsquo;s blood donation drives
+            and hold Level 5 in the &micro;Learn community with 6,470+ karma points.
+          </p>
+        </article>
+
+        <aside class="facts">
+          <h3 class="facts-head">Spec sheet</h3>
+          <dl class="facts-list">
+            <dt>Focus</dt><dd>Cybersecurity, cryptography, AI systems</dd>
+            <dt>Graduating</dt><dd>2027</dd>
+            <dt>Interned at</dt><dd>DRDO &middot; IBM SkillsBuild &middot; ICT Academy</dd>
+            <dt>Recognition</dt><dd>Smart India Hackathon — national preliminary round</dd>
+            <dt>Open to</dt><dd>Software development &amp; security roles</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <p class="section-tag">Skills</p>
+      <h2 class="section-head">What I <em>work</em> with</h2>
+
+      <div class="skills-grid">
+        <article class="skill-block">
+          <h3>Proficiency</h3>
+          <!-- description list: skill / proficiency pairs -->
+          <dl class="proficiency" id="proficiencyList"></dl>
+        </article>
+
+        <article class="skill-block">
+          <h3>Toolbox</h3>
+          <ul class="tool-list">
+            <li>Kali Linux</li><li>Wireshark</li><li>Nmap</li><li>Burp Suite</li>
+            <li>MySQL</li><li>Flask</li><li>Git &amp; GitHub</li><li>VS Code</li>
+            <li>Gemini API</li><li>Figma</li><li>Canva</li><li>Linux</li>
+          </ul>
+
+          <h3 class="mt">How I got here</h3>
+          <!-- ordered list: the learning path -->
+          <ol class="path">
+            <li>C and Java fundamentals, data structures</li>
+            <li>DBMS and SQL — built a full records system</li>
+            <li>Networks, then offensive tooling at ICT Academy</li>
+            <li>Python automation and agentic AI at IBM SkillsBuild</li>
+            <li>Chaotic-map cryptography and secure code review</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS (rendered by JS) ============ -->
+    <section class="section" id="projects">
+      <p class="section-tag">Projects</p>
+      <div class="projects-head">
+        <h2 class="section-head">Four things I <em>built</em></h2>
+        <div class="filters" id="filters" role="group" aria-label="Filter projects by technology"></div>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <p class="loading mono">Loading projects&hellip;</p>
+      </div>
+      <p class="saved-note mono" id="savedNote"></p>
+    </section>
+
+    <!-- ============ INTERNSHIPS ============ -->
+    <section class="section" id="internships">
+      <p class="section-tag">Internships</p>
+      <h2 class="section-head">Where I&rsquo;ve <em>worked</em></h2>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Service record</caption>
+          <thead>
+            <tr>
+              <th scope="col">Organisation</th>
+              <th scope="col">Role</th>
+              <th scope="col">Duration</th>
+              <th scope="col">What I did</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">ADE, DRDO <span class="cell-sub">Bengaluru</span></th>
+              <td>Project Intern</td>
+              <td class="mono">Dec 2025 – Jan 2026</td>
+              <td>Secure code characterization and software quality analysis for ADA compliance, working under DRDO scientists.</td>
+            </tr>
+            <tr>
+              <th scope="row">IBM SkillsBuild &times; CSRBOX <span class="cell-sub">Remote</span></th>
+              <td>AI Agent Architect Trainee</td>
+              <td class="mono">Jul 2025 – Aug 2025</td>
+              <td>Built AI-powered applications using agentic AI patterns, prompt engineering and Python automation workflows.</td>
+            </tr>
+            <tr>
+              <th scope="row">ICT Academy of Kerala <span class="cell-sub">Trivandrum</span></th>
+              <td>Cyber Security Intern</td>
+              <td class="mono">Dec 2024 – Jan 2025</td>
+              <td>Network monitoring, vulnerability identification and risk analysis using Kali Linux, Wireshark, Nmap and Burp Suite.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <p class="section-tag">Education</p>
+      <h2 class="section-head">Study &amp; <em>involvement</em></h2>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Workshop &amp; training</caption>
+          <thead>
+            <tr>
+              <th scope="col">Institution</th>
+              <th scope="col">Degree / Role</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Mar Baselios College of Engineering and Technology <span class="cell-sub">Nalanchira, Trivandrum</span></th>
+              <td>B.Tech, Computer Science and Engineering</td>
+              <td class="mono">Expected 2027</td>
+              <td>Data Structures, DBMS, Operating Systems, Software Engineering, Computer Networks, AI, Machine Learning.</td>
+            </tr>
+            <tr>
+              <th scope="row">NSS – RUDHIRASENA, MBCET</th>
+              <td>Unit Coordinator</td>
+              <td class="mono">2024 – 2025</td>
+              <td>Coordinated blood donation camps and community outreach; led student volunteer teams.</td>
+            </tr>
+            <tr>
+              <th scope="row">&micro;Learn Community</th>
+              <td>Active Member — Level 5</td>
+              <td class="mono">Since 2023</td>
+              <td>6,470+ karma points across tech tasks, community events and peer learning at the MBCET chapter.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <p class="section-tag">Contact</p>
+      <div class="contact-grid">
+        <div class="contact-copy">
+          <h2 class="section-head">Let&rsquo;s <em>talk</em>.</h2>
+          <p class="lead">
+            Recruiting, collaborating, or just want to argue about whether chaotic maps
+            count as real cryptography — either is welcome.
+          </p>
+          <ul class="contact-list">
+            <li><span class="mono">email</span> <a href="mailto:srramkishore@gmail.com">srramkishore@gmail.com</a></li>
+            <li><span class="mono">phone</span> <a href="tel:+918078315736">+91 80783 15736</a></li>
+            <li><span class="mono">github</span> <a href="https://github.com/ramkishore2110" target="_blank" rel="noopener">ramkishore2110</a></li>
+            <li><span class="mono">linkedin</span> <a href="https://www.linkedin.com/in/srramkishore" target="_blank" rel="noopener">in/srramkishore</a></li>
+            <li><span class="mono">resume</span> <a href="RESUME_S_R_RAMKISHORE.pdf" download>Download PDF</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" />
+            <p class="msg" id="nameMsg" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" autocomplete="email" placeholder="you@company.com" />
+            <p class="msg" id="emailMsg" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What&rsquo;s this about?"></textarea>
+            <p class="msg" id="messageMsg" aria-live="polite"></p>
+          </div>
+
+          <button type="submit" class="btn btn-solid full">Send message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <p class="foot-name">S R Ramkishore</p>
+    <p class="foot-meta mono">Hand-written HTML5, CSS3 and JavaScript &mdash; no frameworks.</p>
+    <p class="foot-meta mono">&copy; <span id="year"></span> &middot; Trivandrum, Kerala</p>
+  </footer>
+
+  <!-- fixed scroll-to-top -->
+  <button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+  <!-- project modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card" id="modalCard"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
